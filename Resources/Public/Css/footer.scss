@@ -1,0 +1,99 @@
+
+@mixin sizeimage($height,$width) {
+    width: $width;
+    height: $height;
+   }
+
+.bodytext{
+   width: 50%;
+
+   margin-left: auto;
+   margin-right: auto;
+   color: grey;
+   /* background-image: url('/fileadmin/user_upload/backgroundimage.jpg'); */
+}
+
+
+img{
+   
+    @include sizeimage(500px, 100%);
+
+}
+
+
+
+
+.header{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    color: blue;
+}
+
+
+.footer{
+  
+    padding-top: 1%;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    color: white;
+   
+    bottom: 0;
+   
+}
+.align{
+    display: block;
+}
+
+.alignfooter{
+    margin-left: auto;
+    margin-right: auto;
+    width:20%;
+    color: white;
+}
+body{
+    background-color: #dddddd;
+    .grid{
+        display: grid;
+    margin-top: 2%;
+
+    grid-gap: 50px;
+    grid-template-columns: repeat(2, 50%);
+    align-content: center;
+    img{
+        @include sizeimage(500px, 80%);
+        margin-left: 10%;
+
+    }    
+
+ 
+    .divContentteaser{
+        background-color: white;
+        width: 80%;
+        height: 15%;
+
+        margin-left: 10%;
+        h1{
+        color: #490f0f;
+        margin-top: 100px;
+        margin-left: 10px;
+        }
+        .divIcone{
+            width: 50px;
+            height: 50%;
+
+            margin-top: 0;
+            margin-left: 95%;
+        }
+        .divLigne{
+            margin-top: -1%;
+            height: 10px;
+            width: 100%
+        }
+    }
+    }
+
+    
+    
+}

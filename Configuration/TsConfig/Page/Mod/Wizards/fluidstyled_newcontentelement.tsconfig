@@ -1,0 +1,98 @@
+mod.wizards.newContentElement.wizardItems.common {
+    elements {
+        fluidstyled_newcontentelement {
+            iconIdentifier = your-icon-identifier
+            title = My new content
+            description = My new content fluid
+            tt_content_defValues {
+                CType = fluidstyled_newcontentelement
+            }
+        }
+        fluidstyled_footerteaser {
+            iconIdentifier = your-icon-identifier
+            title = CE Footer Teaser
+            description = My new content fluid
+            tt_content_defValues {
+                CType = fluidstyled_footerteaser
+            }
+        }
+
+        fluidstyled_imageteaser {
+            iconIdentifier = your-icon-identifier
+            title = CE Image Teaser
+            description = My new content fluid
+            tt_content_defValues {
+                CType = fluidstyled_imageteaser
+            }
+        }
+
+        my_extension_my_slider {
+            iconIdentifier = your-icon-identifier
+            title = My new Content for teaser
+            description = My new Content for teaser
+            tt_content_defValues {
+                CType = my_extension_my_slider
+            }
+        }
+        header_with_title {
+           iconIdentifier = HeaderWithTitle
+           title = LLL:EXT:your_extension_key/Resources/Private/Language/locallang.xlf:header_with_title.title
+           description = LLL:EXT:your_extension_key/Resources/Private/Language/locallang.xlf:header_with_title.description
+           tt_content_defValues {
+               CType = header_with_title
+           }
+        }
+
+
+    }
+    show := addToList(fluidstyled_newcontentelement,fluidstyled_footerteaser,fluidstyled_imageteaser,my_extension_my_slider,header_with_title)
+}
+
+
+
+// mod.wizards.newContentElement.wizardItems.common {
+//     elements {
+//         fluidstyled_footerteaser {
+//             iconIdentifier = your-icon-identifier
+//             title = CE Footer Teaser
+//             description = My new content fluid
+//             tt_content_defValues {
+//                 CType = fluidstyled_footerteaser
+//             }
+//         }
+//     }
+//     show := addToList(fluidstyled_footerteaser)
+// }
+
+
+// mod.wizards.newContentElement.wizardItems.common {
+//     elements {
+//         fluidstyled_imageteaser {
+//             iconIdentifier = your-icon-identifier
+//             title = CE Image Teaser
+//             description = My new content fluid
+//             tt_content_defValues {
+//                 CType = fluidstyled_imageteaser
+//             }
+//         }
+//     }
+//     show := addToList(fluidstyled_imageteaser)
+// }
+
+
+
+// mod.wizards.newContentElement.wizardItems.common {
+//     elements {
+//         my_extension_my_slider {
+//             iconIdentifier = your-icon-identifier
+//             title = My new Content for teaser
+//             description = My new Content for teaser
+//             tt_content_defValues {
+//                 CType = my_extension_my_slider
+//             }
+//         }
+//     }
+//     show := addToList(my_extension_my_slider)
+// }
+
+

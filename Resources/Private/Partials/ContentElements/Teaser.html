@@ -1,0 +1,29 @@
+<div class="grid">
+  <f:for each="{slides}" as="slide" iteration="itemIterator">
+    <div>
+      <div><f:image image="{slide.imagecontent.0.originalFile}" /></div>
+      <div class="divContentteaser">
+        <h1 style="margin-top: 0%">{slide.data.bodytext}</h1>
+        <div
+          id="divColor{itemIterator.cycle}"
+          data-style="{slide.data.color}"
+          class="divIcone"
+        >
+          <a href="{slide.data.link}">
+            <f:image
+              src="fileadmin/user_upload/fleche.png"
+              alt="foo"
+              style="width: 90%; height: 90%"
+          /></a>
+        </div>
+
+        <div
+          class="divLigne"
+          id="color{itemIterator.cycle}"
+          data-style="{slide.data.color}"
+        ></div>
+      </div>
+    </div>
+  </f:for>
+</div>
+<input type="hidden" id="length" value="{data.contentimage}" />

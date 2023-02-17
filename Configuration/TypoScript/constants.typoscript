@@ -1,0 +1,38 @@
+######################
+#### DEPENDENCIES ####
+######################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fluid_styled_content/Configuration/TypoScript/constants.typoscript">
+
+
+##############################
+#### FLUID STYLED CONTENT ####
+##############################
+styles {
+    templates {
+        layoutRootPath = EXT:fluidstyled/Resources/Private/Layouts/ContentElements/
+        partialRootPath = EXT:fluidstyled/Resources/Private/Partials/ContentElements/
+        templateRootPath = EXT:fluidstyled/Resources/Private/Templates/ContentElements/
+    }
+
+    
+
+}
+
+
+############
+### PAGE ###
+############
+
+
+
+##############
+### CONFIG ###
+##############
+config {
+    no_cache = 0
+    removeDefaultJS = 0
+    admPanel = 1
+    prefixLocalAnchors = all
+    headerComment = build by sitepackagebuilder.com
+    sendCacheHeaders = 1
+}

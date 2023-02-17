@@ -1,0 +1,9 @@
+#
+# PageTS for fluidstyled
+#
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fluidstyled/Configuration/TsConfig/Page/RTE.tsconfig">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fluidstyled/Configuration/TsConfig/Page/TCEFORM.tsconfig">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fluidstyled/Configuration/TsConfig/Page/TCEMAIN.tsconfig">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fluidstyled/Configuration/TsConfig/Page/Mod/WebLayout/BackendLayouts.tsconfig">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fluidstyled/Configuration/TsConfig/Page/Mod/Wizards/fluidstyled_newcontentelement.tsconfig">
+

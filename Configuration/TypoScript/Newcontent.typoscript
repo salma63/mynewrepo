@@ -1,0 +1,68 @@
+
+
+lib.dataProcessor.contentimage = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+lib.dataProcessor.contentimage {
+    table = contentimage
+    pidInList.field = pid
+
+    orderBy = sorting
+    as = slides
+
+    #     add data processing of needed... (for images)
+     dataProcessing {
+            10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+            10 {
+                references.fieldName = image
+                as = imagecontent
+            }
+        }
+}
+
+tt_content {
+    fluidstyled_newcontentelement =< lib.contentElement
+    fluidstyled_newcontentelement {
+        templateName = NewContentElement
+        dataProcessing {
+            10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+            10 {
+                references.fieldName = image
+                as = imagecontent
+            }
+        }
+        
+    }
+    fluidstyled_footerteaser =< lib.contentElement
+    fluidstyled_footerteaser {
+        templateName = NewContentElement
+        dataProcessing {
+            10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+            10 {
+                references.fieldName = image
+                as = imagecontent
+            }
+            
+        }
+          dataProcessing {
+            20 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+            20 {
+                references.fieldName = media
+                as = mediacontent
+            }
+            
+        }
+        
+    }
+    my_extension_my_slider =< lib.contentElement
+    my_extension_my_slider {
+        templateName = NewTeaserImage
+        dataProcessing {
+            30 < lib.dataProcessor.contentimage
+        }
+        
+    }
+    
+}
+
+
+
+
